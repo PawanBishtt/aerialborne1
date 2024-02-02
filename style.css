@@ -1,0 +1,664 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    height: 10vh;
+    padding: 4vw 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.drone {
+    width: 4vw;
+    height: 4vw;
+    background-image: url(/images/drone.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.title p {
+    color: grey;
+}
+
+.right-nav {
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50px;
+    background-image: url(/images/christian-buehner-DItYlc26zVI-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.search-bar {
+    width: 96%;
+    margin: 0 auto;
+    padding: 0.5vw 1vw;
+    border-radius: 10px;
+    background-color: rgba(192, 192, 192, 0.263);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar i {
+    color: grey;
+}
+
+.search-bar input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.part-1 {
+    padding: 2vw 2vw;
+    height: 50vh;
+}
+
+.part-1 .prices {
+    display: none;
+}
+
+.carousel {
+    height: 100%;
+    margin-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel .box {
+    width: 23%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.box:hover img {
+    scale: 1.2;
+}
+
+.box-1 img,
+.box-2 img {
+    max-width: 100%;
+    transition: all ease 0.5s;
+}
+
+.box-3 img,
+.box-4 img {
+    height: 100%;
+    transition: all ease 0.5s;
+}
+
+.box .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.388);
+    opacity: 1;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    padding: 1vw 1vw;
+    display: flex;
+    flex-direction: column;
+    gap: 12vw;
+}
+
+.overlay .overlay-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.overlay-top button {
+    padding: 1vw 1vw;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+.overlay h2 {
+    color: white;
+}
+
+.part-2 {
+    padding: 2vw 2vw;
+    display: flex;
+}
+
+.two-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.two-left h3 {
+    margin-top: 1vw;
+}
+
+.two-left p {
+    color: grey;
+}
+
+.two-left .image-wrapper {
+    width: 90%;
+    height: 25vh;
+    overflow: hidden;
+    margin-top: 2vw;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-wrapper #dekstop-image {
+    max-width: 100%;
+    transition: all ease 0.5s;
+}
+
+.image-wrapper #phone-image {
+    display: none;
+    transition: all ease 0.5s;
+}
+
+.image-wrapper:hover img {
+    scale: 1.2;
+}
+
+.image-wrapper-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    padding: 1vw 1vw;
+}
+
+.image-wrapper-overlay button {
+    padding: 1vw 2vw;
+    border: none;
+    border-radius: 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.image-wrapper-overlay h1 {
+    color: white;
+}
+
+.image-wrapper-overlay #phone-heading {
+    display: none;
+}
+
+
+.image-wrapper-overlay h1 span {
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.two-right {
+    width: 50%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    padding: 2vw 2vw;
+}
+
+/* swiper */
+
+.two-right .slider {
+    width: 100%;
+    height: 30vh;
+    margin-top: 2vw;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+/* swiper end */
+
+
+.part-3 {
+    background-color: rgba(215, 227, 223, 0.286);
+    padding: 2vw 2vw;
+}
+
+.part-3 h3 {
+    color: grey;
+    margin-top: 1vw;
+    font-size: 1.4vw;
+}
+
+.part-3 .collections {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2vw;
+}
+
+.part-3 .collections .cube {
+    width: 23%;
+}
+
+.part-3 .collections .cube img {
+    width: 100%;
+}
+
+.part-3 .collections .cube-3 img,
+.part-3 .collections .cube-4 img {
+    height: 58.5%;
+}
+
+.part-3 .collections .cube p {
+    color: grey;
+    margin-top: 0.5vw;
+    font-size: 1.2vw;
+}
+
+.part-3 .collections .cube h2 {
+    margin-top: 2vw;
+    color: rgb(57, 57, 57);
+    font-size: 1.3vw;
+}
+
+.part-3 .collections .cube h1 {
+    font-size: 1.5vw;
+}
+
+.part-4 {
+    padding: 2vw 2vw;
+    display: flex;
+    margin-top: 10vw;
+}
+
+.part-4 .four-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    border-radius: 10px;
+    border: 2px solid rgba(192, 192, 192, 0.479);
+    padding: 3vw 2vw;
+}
+
+.four-left h1 {
+    font-size: 3.5vw;
+    font-weight: 700;
+}
+
+.four-left p {
+    font-size: 2.5vw;
+    color: grey;
+}
+
+.four-left button {
+    background-color: rgba(0, 0, 255, 0.538);
+    padding: 1vw 1.5vw;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 2vw;
+    cursor: pointer;
+    font-size: 1.1vw;
+}
+
+.four-left img {
+    height: 60vh;
+}
+
+.part-4 .four-right {
+    width: 45%;
+    padding: 1vw 1vw;
+    background-color: rgba(215, 227, 223, 0.286);
+    margin-left: 2vw;
+    border-radius: 10px;
+    position: relative;
+}
+
+.four-right h1 {
+    font-weight: 700;
+}
+
+.four-right .pilots {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.four-right .pilots .pilot {
+    width: 23%;
+}
+
+.pilot .pilot-name {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    background-color: silver;
+    padding: 0.2vw 0.2vw;
+    margin-top: -0.3vw;
+}
+
+.pilots .pilot img {
+    width: 100%;
+}
+
+.pilots .pilot-2 img,
+.pilots .pilot-3 img,
+.pilots .pilot-4 img {
+    height: 90%;
+}
+
+.four-right #btn-1 {
+    padding: 1vw 3vw;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.538);
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.four-right #btn-2 {
+    display: none;
+}
+
+/* media queries */
+
+@media (max-width:600px) {
+    nav {
+        justify-content: center;
+        gap: 10vw;
+    }
+
+    .drone {
+        display: none;
+    }
+
+    .right-nav {
+        width: 13vw;
+        height: 13vw;
+    }
+
+    .search-bar {
+        padding: 2vw 2vw;
+    }
+
+    .part-1 {
+        overflow-x: auto;
+        height: auto;
+    }
+
+    .part-1 h4 {
+        font-size: 5vw;
+        margin: 3vw 0vw;
+        font-weight: 700;
+    }
+
+    .carousel {
+        width: 300vw;
+        height: 30vh;
+    }
+
+    .box .overlay {
+        gap: 30vw;
+        padding: 2vw 2vw;
+    }
+
+    .overlay .overlay-top h3 {
+        display: none;
+    }
+
+    .overlay .overlay-top {
+        display: block;
+    }
+
+    .overlay .overlay-top button {
+        float: right;
+        padding: 4vw 4vw;
+        border-radius: 50px;
+    }
+
+    .part-2 {
+        flex-direction: column;
+        gap: 10vw;
+    }
+
+    .two-left,
+    .two-right {
+        width: 100%;
+    }
+
+    .two-left h1, .two-right h1 {
+        font-weight: 700;
+    }
+
+    .two-left h3 {
+        margin: 3vw 5vw;
+    }
+
+    .two-left p {
+        margin-left: 5vw;
+    }
+
+    .two-left .image-wrapper {
+        width: 100%;
+    }
+
+    .image-wrapper #dekstop-image {
+        display: none;
+        max-width: 100%;
+        transition: all ease 0.5s;
+    }
+
+    .image-wrapper #phone-image {
+        display: block;
+        max-width: 100%;
+        transition: all ease 0.5s;
+    }
+
+    .image-wrapper-overlay #phone-heading {
+        display: block;
+        font-size: 4vw;
+        letter-spacing: 1px;
+    }
+
+    .image-wrapper-overlay #phone-heading span {
+        font-size: 3.5vw;
+        font-weight: 100;
+        color: rgb(255, 255, 255);
+    }
+
+    .image-wrapper-overlay #dekstop-heading {
+        display: none;
+    }
+
+    .image-wrapper-overlay {
+        padding: 4vw 3vw;
+    }
+
+    .image-wrapper-overlay button {
+        padding: 2vw 2vw;
+        border-radius: 50px;
+    }
+
+    .two-right {
+        border: none;
+    }
+
+    .two-right .slider {
+        height: 25vh;
+    }
+
+    .part-3 {
+        margin-top: 10vw;
+        padding: 5vw 5vw;
+        overflow-x: auto;
+    }
+
+    .part-3 h1 {
+        font-size: 6vw;
+        font-weight: 700;
+    }
+
+    .part-3 h3 {
+        font-size: 4vw;
+    }
+
+    .part-3 .collections {
+        width: 250vw;
+        margin-top: 5vw;
+    }
+
+    .part-3 .collections .cube p {
+        font-size: 4vw;
+    }
+
+    .part-3 .collections .cube h2 {
+        font-size: 4vw;
+    }
+
+    .part-3 .collections .cube h1 {
+        font-size: 4.7vw;
+    }
+
+    .part-4 {
+        flex-direction: column;
+        gap: 15vw;
+    }
+
+    .part-4 .four-left,
+    .part-4 .four-right {
+        width: 100%;
+    }
+
+    .part-4 .four-left {
+        padding: 10vw 5vw;
+        border: 3px solid rgba(192, 192, 192, 0.479);
+    }
+
+    .four-left h1 {
+        font-size: 7vw;
+        margin-bottom: 5vw;
+        font-weight: 700;
+    }
+
+    .four-left p {
+        font-size: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .four-left button {
+        padding: 2vw 3vw;
+        border-radius: 5px;
+        font-size: 5vw;
+    }
+
+    .four-left img {
+        height: 20vh;
+    }
+
+    .part-4 .four-right {
+        width: 95%;
+        padding: 5vw 3vw;
+        background-color: rgba(173, 222, 207, 0.452);
+        margin: 0 auto;
+    }
+
+    .four-right h1 {
+        font-size: 4.5vw;
+    }
+
+    .four-right .pilots .pilot {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .pilot .pilot-name {
+        padding: 0.5vw 0.5vw;
+        margin-top: -1vw;
+    }
+
+    .pilots .pilot-2 img,
+    .pilots .pilot-3 img,
+    .pilots .pilot-4 img {
+        height: 84%;
+    }
+
+    .four-right #btn-1 {
+        display: none;
+    }
+
+    .four-right #btn-2 {
+        display: block;
+        padding: 2vw 3vw;
+        background-color: rgba(0, 0, 255, 0.538);
+        color: white;
+        border: none;
+        font-size: 4vw;
+        border-radius: 5px;
+        margin-top: 5vw;
+    }
+
+    .part-1 .prices {
+        display: flex;
+        width: 300vw;
+        justify-content: start;
+        gap: 44vw;
+        padding: 2vw 1vw;
+    }
+
+    .part-1 .prices p {
+        font-weight: 700;
+    }
+}
